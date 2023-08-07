@@ -4,7 +4,7 @@ Follow these steps to install the Exchange Rate - Tvoy Startup extension in deve
 
 1. **Download the extension:**
    - Navigate to the GitHub repository: [tvoy-startup-crm-exchange-rate](https://github.com/tvoy-startup-crm-exchange-rate).
-   - In the file navigation, open the "Code" menu and click "Dwnload ZIP", or use the direct download link: https://github.com/alreva/tvoy-startup-crm-exchange-rate/archive/refs/heads/main.zip
+   - In the file navigation, open the "Code" menu and click "Download ZIP", or use the direct download link: https://github.com/alreva/tvoy-startup-crm-exchange-rate/archive/refs/heads/main.zip
 
 2. **Extract the Downloaded File:**
    - Locate the downloaded zip file on your computer.
@@ -12,7 +12,7 @@ Follow these steps to install the Exchange Rate - Tvoy Startup extension in deve
 
 3. **Open Chrome's Extension Page:**
    - Open Google Chrome.
-   - In the address bar, type `chrome://extensions/` and press Enter.
+   - In the address bar, type `chrome://extensions/` and press Enter, or use the puzzle icon in hte top-left corner to open the extensions, then click "Manage Extensions".
 
 4. **Enable Developer Mode:**
    - Locate the 'Developer mode' toggle in the top right corner of the page.
