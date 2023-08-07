@@ -12,7 +12,7 @@ Follow these steps to install the Exchange Rate - Tvoy Startup extension in deve
 
 3. **Open Chrome's Extension Page:**
    - Open Google Chrome.
-   - In the address bar, type `chrome://extensions/` and press Enter, or use the puzzle icon in hte top-left corner to open the extensions, then click "Manage Extensions".
+   - In the address bar, type `chrome://extensions/` and press Enter, or use the puzzle icon in the top-left corner to open the extensions, then click "Manage Extensions".
 
 4. **Enable Developer Mode:**
    - Locate the 'Developer mode' toggle in the top right corner of the page.
