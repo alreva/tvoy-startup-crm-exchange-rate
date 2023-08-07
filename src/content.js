@@ -18,7 +18,7 @@
         log('invoice date: ' + invoiceDateStr);
         const [yr, mon, day] = invoiceDateStr.split('-');
         const dt = new Date(yr, mon - 1, day);
-        // dt.setDate(dt.getDate() - 1);
+        dt.setDate(dt.getDate() - 1);
 
         const data = await chrome.runtime.sendMessage({
             type: 'fetchcurrencyrate',
@@ -31,15 +31,15 @@
     
         const rates = [...data.rates];
         /*  [
-                { "no": "146/C/NBP/2023", "effectiveDate": "2023-07-31", "bid": 3.9676, "ask": 4.0478 },
-                { "no": "147/C/NBP/2023", "effectiveDate": "2023-08-01", "bid": 3.9536, "ask": 4.0334 },
+                { "no": "1/A/NBP/2012", "effectiveDate": "2012-01-02", "mid": 5.348 },
+                { "no": "2/A/NBP/2012", "effectiveDate": "2012-01-03", "mid": 5.3394 }
             ] */
         rates.sort((a, b) => new Date(b.effectiveDate) - new Date(a.effectiveDate))
         
         log('rates, sorted:');
         console.log(rates);
     
-        var rate = rates[0].bid;
+        var rate = rates[0].mid;
         log('exchange rate: ' + rate);
         
         document.getElementById('sales_invoice_proforma_form_payment_exchange').value = rate;

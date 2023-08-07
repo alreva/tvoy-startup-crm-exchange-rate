@@ -25,8 +25,8 @@
             const sdt = new Date(dt);
             sdt.setDate(dt.getDate() - 7);
     
-            // const apiUrl = `https://api.nbp.pl/api/exchangerates/rates/c/usd/${message.yr}-${message.mon}-${message.day}/?format=json`;
-            const apiUrl = `https://api.nbp.pl/api/exchangerates/rates/c/usd/${formatDate(sdt)}/${formatDate(dt)}/?format=json`;
+            // info: http://api.nbp.pl/en.html
+            const apiUrl = `https://api.nbp.pl/api/exchangerates/rates/a/usd/${formatDate(sdt)}/${formatDate(dt)}/?format=json`;
             log('fetching USD exchange rate from ' + apiUrl);
             
             fetch(apiUrl)
@@ -42,5 +42,5 @@
     });
     
     log('background worker loaded.');
-    
+
 })();
