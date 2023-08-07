@@ -3,7 +3,7 @@
 Follow these steps to install the Exchange Rate - Tvoy Startup extension in developer mode using the latest build artifacts from the GitHub repository `tvoy-startup-crm-exchange-rate`:
 
 1. **Download the extension:**
-   - Navigate to the GitHub repository: [tvoy-startup-crm-exchange-rate](https://github.com/tvoy-startup-crm-exchange-rate).
+   - Navigate to the GitHub repository: https://github.com/alreva/tvoy-startup-crm-exchange-rate.
    - In the file navigation, open the "Code" menu and click "Download ZIP", or use the direct download link: https://github.com/alreva/tvoy-startup-crm-exchange-rate/archive/refs/heads/main.zip
 
 2. **Extract the Downloaded File:**
