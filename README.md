@@ -1,16 +1,14 @@
 ## Installation Instructions
 
-Follow these steps to install the Currency Integrator for CRM Invoices extension in developer mode using the latest build artifacts from the GitHub repository `tvoy-startup-crm-exchange-rate`:
+Follow these steps to install the Exchange Rate - Tvoy Startup extension in developer mode using the latest build artifacts from the GitHub repository `tvoy-startup-crm-exchange-rate`:
 
-1. **Download the Build Artifacts:**
+1. **Download the extension:**
    - Navigate to the GitHub repository: [tvoy-startup-crm-exchange-rate](https://github.com/tvoy-startup-crm-exchange-rate).
-   - Go to the "Actions" tab.
-   - Find the latest successful build and click on it.
-   - Download the relevant build artifacts from the artifacts section at the bottom of the page.
+   - In the file navigation, open the "Code" menu and click "Dwnload ZIP", or use the direct download link: https://github.com/alreva/tvoy-startup-crm-exchange-rate/archive/refs/heads/main.zip
 
 2. **Extract the Downloaded File:**
    - Locate the downloaded zip file on your computer.
-   - Extract the zip file to a known location, revealing the extension's build artifacts.
+   - Extract the zip file to a known location, revealing the extension's files.
 
 3. **Open Chrome's Extension Page:**
    - Open Google Chrome.
@@ -23,14 +21,17 @@ Follow these steps to install the Currency Integrator for CRM Invoices extension
 5. **Load the Extension:**
    - Click the 'Load unpacked' button that appears.
    - Navigate to the directory where the extension's build artifacts are located.
-   - Select the directory and click 'Open'.
+   - Select the src sub-directory and click 'Open'.
 
 6. **Verify Installation:**
-   - The Currency Integrator for CRM Invoices extension should now appear in your list of installed extensions.
+   - The Exchange Rate - Tvoy Startup extension should now appear in your list of installed extensions.
    - You can pin the extension to your toolbar for easy access by clicking the Extensions icon (a puzzle piece) in the toolbar and then clicking the pin icon next to the extension's name.
 
 7. **Usage:**
    - The extension will automatically fetch the latest PLN/USD exchange rate from the Polish National Bank and update the currency fields in your CRM Invoice Page.
+   - Create a new invoice
+   - Select the USD as Currency in the "Payments" section.
+   - Click the "fetch" button below the "Foreign currency to PLN exchange rate".
 
 ## Support and Updates:
 
