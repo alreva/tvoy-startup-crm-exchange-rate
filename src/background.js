@@ -18,7 +18,7 @@
         log('incoming message:');
         console.log(message);
     
-        if (message.type === "fetchcurrencyrate") {
+        if (message.type === "fetch-currency-rate") {
     
             const {yr, mon, day} = message;
             const dt = new Date(yr, mon - 1, day);
