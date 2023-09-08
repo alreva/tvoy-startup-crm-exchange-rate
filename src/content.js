@@ -116,7 +116,8 @@
 
         log(`The fee is ${usdFeeAmount} USD rounded to ${usdFeeAmountRounded} USD`);
 
-        document.getElementById(`sales_invoice_proforma_form_products_${errAnalysisIdx}_unitPrice`).value = usdFeeAmountRounded;
+        document.getElementById(`sales_invoice_proforma_form_products_${errAnalysisIdx}_amount`).value = 1;
+        document.getElementById(`sales_invoice_proforma_form_products_${errAnalysisIdx}_unitPrice`).value = usdFeeAmountRounded;        
     }
     
     $('<button>', {
