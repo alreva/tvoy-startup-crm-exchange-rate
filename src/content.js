@@ -85,13 +85,16 @@
         
         for (let i = 0; i < 100; i++) {
 
-            let errorAnalysisElm = document.getElementById(`sales_invoice_proforma_form_products_${i}_item_product`);
+            let errorAnalysisElm =
+                document.getElementById(`sales_invoice_proforma_form_products_${i}_item_product`)
+                || document.getElementById(`sales_invoice_proforma_form_services_${i}_serviceName`);
 
             if (!errorAnalysisElm) {
                 continue;
             }
 
-            if (!errorAnalysisElm.value?.toLowerCase()?.startsWith('error analysis')) {
+            if (!errorAnalysisElm.value?.toLowerCase()?.startsWith('error analysis')
+                && !errorAnalysisElm.value?.toLowerCase()?.startsWith('\u0435rror analysis')) {
                 continue;
             }
 
@@ -116,8 +119,12 @@
 
         log(`The fee is ${usdFeeAmount} USD rounded to ${usdFeeAmountRounded} USD`);
 
-        document.getElementById(`sales_invoice_proforma_form_products_${errAnalysisIdx}_amount`).value = 1;
-        document.getElementById(`sales_invoice_proforma_form_products_${errAnalysisIdx}_unitPrice`).value = usdFeeAmountRounded;        
+        (document.getElementById(`sales_invoice_proforma_form_products_${errAnalysisIdx}_amount`)
+        || document.getElementById(`sales_invoice_proforma_form_services_${errAnalysisIdx}_amount`))
+            .value = 1;
+        (document.getElementById(`sales_invoice_proforma_form_products_${errAnalysisIdx}_unitPrice`)
+        || document.getElementById(`sales_invoice_proforma_form_services_${errAnalysisIdx}_unitPrice`))
+            .value = usdFeeAmountRounded;
     }
     
     $('<button>', {
@@ -133,12 +140,13 @@
         text: 'Calculate Fee'
     })
         .addClass('btn btn-success')
+        .css({
+            'margin-left': '4px'
+        })
         .on('click', (evt) => {
             calcFoundationFee();
             evt.preventDefault();
         })
         .insertAfter('#proformaItemServicesAdd');
-
-    $('#proformaItemServicesAdd').css('margin-right', '4px');
 
 })();
